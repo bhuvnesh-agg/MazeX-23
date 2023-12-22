@@ -10,7 +10,7 @@ We designed our robot with 5 IR sensors up front, facing downwards. Let's number
 5. Take a U-Turn if all sensors return 0.
 
 ## Contributors
-Bhuvnesh Aggarwal
-Dushyant Agrawal
-Mayank Agrawal
-Nikita Gupta
+- Bhuvnesh Aggarwal
+- Dushyant Agrawal
+- Mayank Agrawal
+- Nikita Gupta
