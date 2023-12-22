@@ -9,6 +9,17 @@ We designed our robot with 5 IR sensors up front, facing downwards. Let's number
 4. Stop if all sensors return 1.
 5. Take a U-Turn if all sensors return 0.
 
+## Maze-Solving
+For solving the maze, we use a basic Left-Hand Algorithm. That is, if given a choice among going straight, taking a left and taking a right; the robot always turns left. This works in this case as the maze has no loops.
+
+## Implementation
+The two motors have been defined separately in the code, and turns are made through introducing speed differences in the two.
+Following functions are used to perform different operations:
+- read_sensors: runs digitalRead on all sensors and updates the corresponding variables
+- set_speed: checks for negative speeds and analogWrites into the motors accordingly
+Inside the loop, the bot continuously reads from the sensors, and assigns an error value according to the approach above. This error value is then used to calculate PID, which sets the wheel speed accordingly.
+Turns, U-Turns and Stop are defined separately.
+
 ## Contributors
 - Bhuvnesh Aggarwal
 - Dushyant Agrawal
